@@ -58,10 +58,22 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
+<<<<<<< HEAD
       "version": "1.2.14",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+=======
+      "version": "1.4.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.director": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0"
+      },
+>>>>>>> 76374770863d704f47413375e55f1efb7536228a
       "url": "https://packages.unity.com"
     },
     "com.unity.ugui": {
