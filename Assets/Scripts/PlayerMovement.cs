@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 12f;
+    public bool isMoving = false;
+    public AudioSource cane; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,18 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move*speed * Time.deltaTime);
+
+        if (x != 0 || z != 0)
+            isMoving = true;
+
+        if (x == 0 && z == 0)
+            isMoving = false;
+
+        if (isMoving)
+            if (cane.isPlaying == false)
+            cane.Play();
+        if(!isMoving)
+            cane.Stop();
         
     }
 }
