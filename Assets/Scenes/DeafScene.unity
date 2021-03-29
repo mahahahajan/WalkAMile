@@ -10796,9 +10796,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hey there,\n\nUnfortunately, I cannot hear anything you say. Would it
-    be possible for me to get a medium Caffe Mocha? \n\nThe name for the order is
-    Paul. I'll pay by card. \nThanks so much!"
+  m_Text: "Hey there,\n\nI am hearing impaired, and cannot hear anything you say.
+    Would it be possible for me to get a medium Caffe Mocha? \n\nThe name for the
+    order is Paul. I'll pay by card. \nThanks so much!"
 --- !u!222 &2112458808
 CanvasRenderer:
   m_ObjectHideFlags: 0
