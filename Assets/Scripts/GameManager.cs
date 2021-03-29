@@ -130,4 +130,8 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(3);
         }
     }
+
+    public void restart(){
+        SceneManager.LoadScene(0);
+    }
 }

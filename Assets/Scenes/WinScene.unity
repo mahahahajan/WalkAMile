@@ -466,6 +466,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424532107}
   m_CullTransparentMesh: 1
+--- !u!1 &1321551626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321551628}
+  - component: {fileID: 1321551627}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1321551627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321551626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b2f9ac272ed4865befde37eb9560fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cane: {fileID: 0}
+  crosswalk1: {fileID: 0}
+  crosswalk2: {fileID: 0}
+  coffeeCup: {fileID: 0}
+  register1: {fileID: 0}
+  register2: {fileID: 0}
+  register3: {fileID: 0}
+  blindButton: {fileID: 0}
+  deafButton: {fileID: 0}
+  easyButton: {fileID: 0}
+  hardButton: {fileID: 0}
+  backButton: {fileID: 0}
+  difficultyText: {fileID: 0}
+  easyText: {fileID: 0}
+  hardText: {fileID: 0}
+  backText: {fileID: 0}
+--- !u!4 &1321551628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321551626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 538, y: 302.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372094387
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,9 +753,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1321551627}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: back
+        m_MethodName: restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
