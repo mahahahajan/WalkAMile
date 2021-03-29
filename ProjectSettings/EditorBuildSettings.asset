@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 97f0ed8be73d0447394b278c034badc8
   - enabled: 1
-    path: Assets/Scenes/BlindScene.unity
-    guid: 07cbdb76d439e4c6f8907750d863a8a4
+    path: Assets/Scenes/BlindSceneEasy.unity
+    guid: 7fec570ad6ee2487d80e3c3622da1d42
+  - enabled: 1
+    path: Assets/Scenes/BlindSceneHard.unity
+    guid: 306ab737ae59849ecb71c65abe1747dc
+  - enabled: 1
+    path: Assets/Scenes/DeafScene.unity
+    guid: 3bd02b53f6e3c654bb014cf14347bf65
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: d4c77923bb5cc4770b31b00d3fb4329a
+  - enabled: 1
+    path: Assets/Scenes/LossScene.unity
+    guid: ff3664029124b47e49092a9e32450bf8
   m_configObjects: {}

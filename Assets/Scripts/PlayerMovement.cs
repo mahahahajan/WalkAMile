@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -45,9 +46,11 @@ public class PlayerMovement : MonoBehaviour
         if(isBlindScene){
             if(this.transform.position.x < 2 || this.transform.position.x > 7){
                 //TODO: DIE
+                SceneManager.LoadScene(5);
             } else{
                 if(this.transform.position.z > 12.3){
                     Debug.Log("You win");
+                    SceneManager.LoadScene(4);
                 }
             }
         }

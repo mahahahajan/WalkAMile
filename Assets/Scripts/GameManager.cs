@@ -111,9 +111,11 @@ public class GameManager : MonoBehaviour
         if(isBlindScene){
             // Application.LoadLevel();
             Debug.Log("Easy Blind Scene");
+            SceneManager.LoadScene(1);
         }
         if(isDeafScene){
             Debug.Log("Easy def scene");
+            SceneManager.LoadScene(3);
         }
     }
 
@@ -121,9 +123,11 @@ public class GameManager : MonoBehaviour
         if(isBlindScene){
             // Application.LoadLevel();
             Debug.Log("Hard Blind Scene");
+            SceneManager.LoadScene(2);
         }
         if(isDeafScene){
             Debug.Log("Hard def scene");
+            SceneManager.LoadScene(3);
         }
     }
 }
