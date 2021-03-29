@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 12f;
     public bool isMoving = false;
     public AudioSource cane; 
+    // public GameObject camera;
+    public bool isBlindScene;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -38,5 +41,25 @@ public class PlayerMovement : MonoBehaviour
         if(!isMoving)
             cane.Stop();
         
+
+        if(isBlindScene){
+            if(this.transform.position.x < 2 || this.transform.position.x > 7){
+                //TODO: DIE
+            } else{
+                if(this.transform.position.z > 12.3){
+                    Debug.Log("You win");
+                }
+            }
+        }
+
+        
+
+    }
+
+    static void OnCollisionEnter(Collision other) {
+        // if(other.collider.gameObject.CompareTag("Finish")){
+        //     Debug.Log("Yo");
+        // }
+        Debug.Log(other.collider.gameObject.name);
     }
 }

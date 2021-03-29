@@ -27966,6 +27966,7 @@ MonoBehaviour:
   isMoving: 0
   cane: {fileID: 446795436}
   camera: {fileID: 0}
+  isBlindScene: 1
 --- !u!54 &812364150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44486,7 +44487,7 @@ Camera:
   m_GameObject: {fileID: 1322135504}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -44508,7 +44509,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

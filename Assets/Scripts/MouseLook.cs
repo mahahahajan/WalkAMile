@@ -12,6 +12,8 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         // Cursor.lockState = CursorLockMode.Locked;
+        Vector3 startRotation = new Vector3(0f, 0f, 0f);
+        GetComponent<Camera>().transform.rotation = Quaternion.identity;
     }
 
     // Update is called once per frame
